@@ -1,5 +1,7 @@
 # rosmodelgen
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Tools to generate model files used for ROS.
 
 ## Dependency
@@ -10,15 +12,19 @@ Tools to generate model files used for ROS.
 
 ## Installation
 
-    $ git clone https://github.com/takuya-ki/rosmodelgen.git --depth 1
-    $ cd rosmodelgen; mkdir -p meshes/visual meshes/collision
-    $ pip install -r requirements.txt
+```bash
+git clone https://github.com/takuya-ki/rosmodelgen.git --depth 1
+cd rosmodelgen; mkdir -p meshes/visual meshes/collision
+pip install -r requirements.txt
+```
 
 ## Usage
 
 ### Generate a collision model in meshes/collistion with an original model in meshes/visual
 
-    $ python3 src/gen_collision.py
+```bash
+python3 src/gen_collision.py
+```
 
 ### Flip normals
 
