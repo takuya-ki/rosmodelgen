@@ -1,6 +1,7 @@
 # rosmodelgen
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![repo size](https://img.shields.io/github/repo-size/takuya-ki/rosmodelgen)
 
 Tools to generate model files used for ROS.
 
