@@ -14,9 +14,7 @@ Tools to generate model files used for ROS.
 ## Installation
 
 ```bash
-git clone https://github.com/takuya-ki/rosmodelgen.git --depth 1
-cd rosmodelgen; mkdir -p meshes/visual meshes/collision
-pip install -r requirements.txt
+git clone https://github.com/takuya-ki/rosmodelgen.git --depth 1 && cd rosmodelgen && mkdir -p meshes/visual meshes/collision && pip install -r requirements.txt
 ```
 
 ## Usage
