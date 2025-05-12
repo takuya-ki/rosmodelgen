@@ -13,6 +13,8 @@ if __name__ == '__main__':
     path = osp.join(
         osp.dirname(__file__), '../', indirpath, '*.stl')
     stlpaths = glob.glob(path)
+    outdirpath = osp.join(
+        osp.dirname(__file__), '../', outdirpath)
 
     for stlpath in stlpaths:
         print('generating for '+osp.basename(stlpath))
