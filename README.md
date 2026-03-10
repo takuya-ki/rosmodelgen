@@ -8,8 +8,7 @@ Tools to generate model files used for ROS.
 ## Dependency
 
 - Python3
-  - numpy>=1.21.6
-  - open3d>=0.16.0
+  - open3d>=0.16.0 (numpy is an indirect dependency, automatically installed)
 
 ## Installation
 
@@ -19,16 +18,25 @@ git clone https://github.com/takuya-ki/rosmodelgen.git --depth 1 && cd rosmodelg
 
 ## Usage
 
-### Generate a collision model in meshes/collistion with an original model in meshes/visual
+### Generate a collision model in meshes/collision with an original model in meshes/visual
 
 ```bash
 python3 src/gen_collision.py
 ```
 
+Options:
+
+| Flag | Default | Description |
+| ---- | ------- | ----------- |
+| `--indir` | `meshes/visual` | Input directory containing visual STL files |
+| `--outdir` | `meshes/collision` | Output directory for collision STL files |
+| `--n-points` | `5000` | Number of points for Poisson disk sampling |
+| `--no-viz` | — | Disable the interactive visualization window |
+
 ### Flip normals
 
 1. Open a stl file with MeshLab
-2. Click [Normals, Curvantures and Orientation]-[Invert Faces Orientation] from Filters menu
+2. Click [Normals, Curvatures and Orientation]-[Invert Faces Orientation] from Filters menu
 3. Check Force Flip and Click Apply
 
 ### Reduce faces
